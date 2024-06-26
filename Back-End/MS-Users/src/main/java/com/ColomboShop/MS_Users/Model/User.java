@@ -1,5 +1,6 @@
 package com.ColomboShop.MS_Users.Model;
 
+import com.fasterxml.jackson.annotation.JsonInclude;
 import lombok.Data;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
@@ -13,8 +14,10 @@ import java.util.List;
 import java.util.Map;
 
 @Data
-@Document(collection = "users")
+@Document(collection = "Users")
+@JsonInclude(JsonInclude.Include.NON_NULL)
 public class User implements UserDetails {
+
     @Id
     private String id;
     private String name;
@@ -56,3 +59,4 @@ public class User implements UserDetails {
         return true;
     }
 }
+

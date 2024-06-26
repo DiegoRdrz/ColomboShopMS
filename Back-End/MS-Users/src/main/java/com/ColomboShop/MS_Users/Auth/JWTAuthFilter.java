@@ -1,7 +1,6 @@
 package com.ColomboShop.MS_Users.Auth;
 
 import com.ColomboShop.MS_Users.Service.JWTUtils;
-import com.ColomboShop.MS_Users.Service.UserService;
 import com.ColomboShop.MS_Users.Service.UserServiceImpl;
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;

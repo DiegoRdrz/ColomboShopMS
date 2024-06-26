@@ -1,13 +1,14 @@
 package com.ColomboShop.MS_Users.Repository;
 
-
 import com.ColomboShop.MS_Users.Model.Review;
 import org.springframework.data.mongodb.repository.MongoRepository;
+import org.springframework.stereotype.Repository;
 
-import java.util.List;
+import java.util.Optional;
 
+@Repository
 public interface ReviewRepository extends MongoRepository<Review, String> {
-    List<Review> findByProductID(String productID);
-    List<Review> findByUserID(String userID);
-}
 
+    @Override
+    Optional<Review> findById(String id);
+}

@@ -7,7 +7,7 @@ import org.springframework.data.mongodb.core.mapping.Document;
 import java.util.Date;
 
 @Data
-@Document(collection = "reviews")
+@Document(collection = "Reviews")
 public class Review {
     @Id
     private String reviewID;
@@ -17,3 +17,4 @@ public class Review {
     private String comment;
     private Date date;
 }
+

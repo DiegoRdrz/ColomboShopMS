@@ -2,7 +2,6 @@ package com.ColomboShop.MS_Users.Config;
 
 
 import com.ColomboShop.MS_Users.Auth.JWTAuthFilter;
-import com.ColomboShop.MS_Users.Service.UserService;
 import com.ColomboShop.MS_Users.Service.UserServiceImpl;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
