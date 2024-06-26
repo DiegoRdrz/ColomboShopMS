@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="MS-Transactions" />
+        <module name="MS-Products" />
+        <module name="MS-Users" />
+        <module name="MS-App" />
+        <module name="MS-Orders" />
+      </profile>
+    </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="Back-End" options="" />
+      <module name="MS-App" options="-parameters" />
+      <module name="MS-Orders" options="-parameters" />
+      <module name="MS-Products" options="-parameters" />
+      <module name="MS-Transactions" options="-parameters" />
+      <module name="MS-Users" options="-parameters" />
+    </option>
+  </component>
+</project>
