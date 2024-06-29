@@ -1,0 +1,30 @@
+spring:
+  cloud:
+    gateway:
+      routes:
+        - id: MS-Users
+          uri: lb://MS-Users
+          predicates:
+            - Path=/ColomboShop/MSUsers/**
+        - id: MS-Products
+          uri: lb://MS-Products
+          predicates:
+            - Path=/ColomboShop/MSProducts/**
+        - id: MS-Orders
+          uri: lb://MS-Orders
+          predicates:
+            - Path=/ColomboShop/MSOrders/**
+        - id: MS-Transactions
+          uri: lb://MS-Transactions
+          predicates:
+            - Path=/ColomboShop/MSTransactions/**
+        - id: MS-App
+          uri: lb://MS-App
+          predicates:
+            - Path=/ColomboShop/MSApp/**
+
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
